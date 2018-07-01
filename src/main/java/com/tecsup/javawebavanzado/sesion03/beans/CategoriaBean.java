@@ -26,7 +26,7 @@ public class CategoriaBean {
 		try {
 			categorias = negocio.listar();
 			System.out.println("Total de categorías: " + categorias.size());
-			
+	 		
 		} catch (DAOExcepcion e) {
 			e.printStackTrace();
 		}
