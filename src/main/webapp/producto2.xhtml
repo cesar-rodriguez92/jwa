@@ -15,7 +15,7 @@
 		<p:carousel value="#{productoBean.productos}" headerText="Responsive" var="prod" itemStyle="text-align:center" responsive="true">
         <p:panelGrid columns="2" style="width:100%;margin:10px 0px" columnClasses="label,value" layout="grid" styleClass="ui-panelgrid-blank">
             <f:facet name="header">
-                <p:graphicImage value="/images/#{prod.imagen}.jpg" style= "height: 150px;" /> 
+                <p:graphicImage name="/images/#{prod.imagen}.jpg" style= "height: 150px;" /> 
             </f:facet>
             <h:outputText value="Id:" />
             <h:outputText value="#{prod.id}" />
@@ -26,7 +26,7 @@
         </p:panelGrid>
  
         <f:facet name="footer">
-                En total hay #{fn:length(productoBean.productos)} productos.
+                En total hay #{fn:length(productoBean.productos)} productos. 
         </f:facet>
     </p:carousel>
     
